@@ -18,9 +18,17 @@ from django.conf.urls import include, url
 import login.views
 import home.views
 import my_profile.views
+import select_schedule.views
+import workout_schedule.views
+import nutrient_schedule.views
 urlpatterns = [
     # url(r'^admin/', include(admin.site.urls)),
     url(r'^login/', login.views.login, name='login'),
     url(r'^profile/', my_profile.views.profile, name='profile'),
-    url(r'^', home.views.home, name='home')
+    url(r'^select_schedule/', select_schedule.views.select_schedule , name='select_schedule'),
+    url(r'^nutrient_schedule/', nutrient_schedule.views.nutrient_schedule, name='nutrient_schedule'),
+    url(r'^workout_schedule/', workout_schedule.views.workout_schedule, name='workout_schedule'),
+    url(r'^', home.views.home, name='home'),
+
+
 ]

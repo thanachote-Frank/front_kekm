@@ -38,7 +38,10 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'login',
     'home',
-    'my_profile'
+    'my_profile',
+    'select_schedule',
+    'nutrient_schedule',
+    'workout_schedule',
 )
 
 MIDDLEWARE_CLASSES = (
